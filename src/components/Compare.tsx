@@ -9,7 +9,8 @@ import { analyze, type Analysis } from '@/lib/analysis';
 import { DIMENSIONS, RATING_LABEL } from '@/lib/rubric';
 import type { StoredReview } from '@/lib/types';
 import type { CheckResult } from '@/lib/ai/compare';
-import { api, ApiError, clockTime } from '@/lib/client';
+import { api, ApiError } from '@/lib/client';
+import { localTime, useHydrated } from './LocalTime';
 
 export interface Side {
   id: string;
@@ -38,6 +39,7 @@ function delta(a: number, b: number, unit = '') {
 
 export function Compare({ essayId, title, rev, a, b, versions }: { essayId: string; title: string; rev: number; a: Side; b: Side; versions: VersionOpt[] }) {
   const router = useRouter();
+  const hydrated = useHydrated();
   const [check, setCheck] = useState<{ running: boolean; result: CheckResult | null; error: string | null }>({ running: false, result: null, error: null });
   const parts = useMemo(() => diffWordsWithSpace(a.content, b.content), [a.content, b.content]);
   const ma = useMemo(() => analyze(a.content), [a.content]);
@@ -51,7 +53,7 @@ export function Compare({ essayId, title, rev, a, b, versions }: { essayId: stri
       {key === 'b' && <option value="current">Current draft</option>}
       {versions.map((v) => (
         <option key={v.id} value={v.id}>
-          {(v.label ?? KIND[v.kind] ?? v.kind) + ` · ${clockTime(v.at)} · ${v.words} words`}
+          {(v.label ?? KIND[v.kind] ?? v.kind) + ` · ${localTime(v.at, hydrated)} · ${v.words} words`}
         </option>
       ))}
     </select>
