@@ -1,0 +1,342 @@
+@import "tailwindcss";
+
+/*
+  Stet design tokens.
+  Desk = app chrome, paper = the page being edited, ink = text, pencil = the editor's blue
+  pencil (the one accent: actions, focus, selection). Annotation colours encode meaning only:
+  red = high priority, ochre = medium, graphite = polish, green dotted = stet ("keep this"),
+  teal = writing pattern.
+*/
+:root {
+  --desk: #f1f2ef;
+  --desk-2: #e7e9e5;
+  --paper: #ffffff;
+  --ink: #1b1f27;
+  --ink-2: #4a515e;
+  --ink-3: #636a77;
+  --rule: #d9dcd8;
+  --rule-strong: #b9beb8;
+  --pencil: #2346b0;
+  --pencil-ink: #ffffff;
+  --pencil-wash: #e6ecfb;
+  --high: #b42318;
+  --high-wash: #fbe9e7;
+  --medium: #8a5300;
+  --medium-wash: #faf0dc;
+  --low: #4a515e;
+  --low-wash: #eceef1;
+  --keep: #1d7348;
+  --keep-wash: #e3f2ea;
+  --pattern: #0d6672;
+  --pattern-wash: #def0f2;
+  --shadow: 0 1px 2px rgb(27 31 39 / 0.06), 0 8px 24px -12px rgb(27 31 39 / 0.18);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --desk: #15171b;
+    --desk-2: #1c1f24;
+    --paper: #1e2127;
+    --ink: #e8eaee;
+    --ink-2: #b7bdc8;
+    --ink-3: #959cab;
+    --rule: #30343c;
+    --rule-strong: #474d57;
+    --pencil: #9db2ff;
+    --pencil-ink: #10131a;
+    --pencil-wash: #263252;
+    --high: #ff8a7d;
+    --high-wash: #3d2220;
+    --medium: #f0b860;
+    --medium-wash: #3a2e1a;
+    --low: #b7bdc8;
+    --low-wash: #2a2e35;
+    --keep: #7fd1a3;
+    --keep-wash: #1d3328;
+    --pattern: #74cbd6;
+    --pattern-wash: #183338;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px -12px rgb(0 0 0 / 0.6);
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-desk: var(--desk);
+  --color-desk-2: var(--desk-2);
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-pencil: var(--pencil);
+  --color-pencil-ink: var(--pencil-ink);
+  --color-pencil-wash: var(--pencil-wash);
+  --color-high: var(--high);
+  --color-high-wash: var(--high-wash);
+  --color-medium: var(--medium);
+  --color-medium-wash: var(--medium-wash);
+  --color-low: var(--low);
+  --color-low-wash: var(--low-wash);
+  --color-keep: var(--keep);
+  --color-keep-wash: var(--keep-wash);
+  --color-pattern: var(--pattern);
+  --color-pattern-wash: var(--pattern-wash);
+  --font-sans: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-text), Georgia, serif;
+  --shadow-sheet: var(--shadow);
+}
+
+html {
+  background: var(--desk);
+}
+
+body {
+  background: var(--desk);
+  color: var(--ink);
+  font-family: var(--font-ui), ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--pencil-wash);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--pencil);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Links in running text are underlined; nav and button links opt out with no-underline. */
+@layer base {
+  a {
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule-strong) transparent;
+}
+
+/* Component classes live in a layer so Tailwind utilities on the same element win. */
+@layer components {
+  /* The wordmark: "stet" with the proofreader's dots beneath it. */
+  .wordmark {
+    font-family: var(--font-text), Georgia, serif;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: -0.01em;
+    text-decoration: underline dotted var(--pencil);
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 6px;
+  }
+
+  /* Buttons: one vocabulary across the app. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    height: 34px;
+    padding: 0 0.8rem;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    border: 1px solid var(--rule-strong);
+    background: var(--paper);
+    color: var(--ink);
+    transition: background-color 120ms, border-color 120ms, color 120ms;
+  }
+  .btn:hover:not(:disabled) {
+    background: var(--desk-2);
+  }
+  .btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+  .btn-primary {
+    background: var(--pencil);
+    border-color: var(--pencil);
+    color: var(--pencil-ink);
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: color-mix(in oklab, var(--pencil) 88%, black);
+  }
+  .btn-ghost {
+    border-color: transparent;
+    background: transparent;
+    color: var(--ink-2);
+  }
+  .btn-ghost:hover:not(:disabled) {
+    background: var(--desk-2);
+    color: var(--ink);
+  }
+  .btn-sm {
+    height: 28px;
+    padding: 0 0.55rem;
+    font-size: 13px;
+    border-radius: 6px;
+  }
+  .btn-danger {
+    color: var(--high);
+  }
+
+  .field {
+    width: 100%;
+    height: 36px;
+    padding: 0 0.7rem;
+    border: 1px solid var(--rule-strong);
+    border-radius: 7px;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 14px;
+  }
+  textarea.field {
+    height: auto;
+    padding: 0.55rem 0.7rem;
+    line-height: 1.5;
+  }
+  .field:focus {
+    outline: 2px solid var(--pencil);
+    outline-offset: -1px;
+    border-color: transparent;
+  }
+  .label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-2);
+    margin-bottom: 0.35rem;
+  }
+
+  /* Essay text, wherever it appears (editor, quotes, diffs). */
+  .essay-text {
+    font-family: var(--font-text), Georgia, serif;
+    font-size: 18.5px;
+    line-height: 1.75;
+    font-variant-numeric: proportional-nums;
+    font-optical-sizing: auto;
+  }
+  .quote {
+    font-family: var(--font-text), Georgia, serif;
+    font-size: 15px;
+    line-height: 1.55;
+    font-variant-numeric: proportional-nums;
+  }
+
+  /* Severity markers in lists: a small square, not a coloured stripe. */
+  .mark {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    flex: none;
+  }
+  .mark-high { background: var(--high); }
+  .mark-medium { background: var(--medium); }
+  .mark-low { background: var(--low); }
+  .mark-keep { background: transparent; border-bottom: 3px dotted var(--keep); border-radius: 0; height: 6px; }
+  .mark-pattern { background: transparent; border-bottom: 2px dashed var(--pattern); border-radius: 0; height: 6px; }
+
+  /* Diff */
+  .diff-del {
+    background: var(--high-wash);
+    color: var(--ink-2);
+    text-decoration: line-through;
+    text-decoration-color: var(--high);
+  }
+  .diff-ins {
+    background: var(--keep-wash);
+    text-decoration: underline solid var(--keep) 1.5px;
+    text-underline-offset: 4px;
+  }
+}
+
+/* Editor and annotation styles stay unlayered: CodeMirror injects unlayered styles of its own. */
+/* CodeMirror, restyled as a page rather than a code editor. */
+.cm-editor {
+  background: transparent;
+  color: var(--ink);
+}
+.cm-editor.cm-focused {
+  outline: none;
+}
+.cm-scroller {
+  font-family: var(--font-text), Georgia, serif !important;
+  font-size: 18.5px;
+  line-height: 1.75 !important;
+  overflow: visible !important;
+}
+.cm-content {
+  padding: 0 !important;
+  caret-color: var(--pencil);
+  max-width: 68ch;
+  font-variant-numeric: proportional-nums;
+}
+.cm-line {
+  padding: 0 !important;
+}
+.cm-cursor {
+  border-left: 2px solid var(--pencil) !important;
+}
+.cm-selectionBackground,
+.cm-focused .cm-selectionBackground {
+  background: var(--pencil-wash) !important;
+}
+.cm-placeholder {
+  color: var(--ink-3) !important;
+  font-style: italic;
+}
+
+/* Passage annotations. Shape carries meaning as well as colour (colour-blind safe). */
+.ann {
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 5px;
+  transition: background-color 120ms;
+}
+.ann-high {
+  background: var(--high-wash);
+  text-decoration: underline solid var(--high) 2px;
+}
+.ann-medium {
+  background: var(--medium-wash);
+  text-decoration: underline solid var(--medium) 2px;
+}
+.ann-low {
+  text-decoration: underline solid var(--low) 1.5px;
+}
+.ann-keep {
+  text-decoration: underline dotted var(--keep) 3px;
+}
+.ann-pattern,
+.ann-measure {
+  text-decoration: underline dashed var(--pattern) 2px;
+}
+.ann-measure {
+  background: var(--pattern-wash);
+}
+.ann-selection {
+  background: var(--pencil-wash);
+}
+.ann-active {
+  background: var(--pencil-wash);
+  box-shadow: 0 0 0 2px var(--pencil);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
