@@ -1,0 +1,802 @@
+{
+ "review": {
+  "overall": "Your essay shines when you describe the hands‑on repair work and the notebook system you created, showing real initiative and impact. The biggest opportunity is to move beyond summary statements and stock phrasing toward deeper, more personal reflection and a stronger, earned conclusion. Start by rewriting the opening and ending, then integrate richer insight throughout the middle.",
+  "takeaway": "You are a self‑starter who can diagnose and fix real problems, and you’ve earned the trust of a diverse community.",
+  "promptFit": {
+   "verdict": "answers",
+   "explanation": "You recount a specific setback (the broken dryer), explain how you dealt with it, and discuss what you learned, directly addressing the prompt."
+  },
+  "strengths": [
+   {
+    "id": "s_aa371532ff",
+    "why": "Shows concrete, technical action that only you could have performed, highlighting problem‑solving skill.",
+    "anchor": {
+     "start": 838,
+     "end": 987,
+     "quote": "That night I watched a technician's video three times, unplugged the dryer, and took off the back panel with a screwdriver I found in the mop closet.",
+     "prefix": "han we make on a slow Tuesday.\n\n",
+     "suffix": " Inside was a belt the width of "
+    }
+   },
+   {
+    "id": "s_c615a271e1",
+    "why": "Demonstrates initiative and creates a lasting tool that even your dad later used, indicating lasting impact.",
+    "anchor": {
+     "start": 1286,
+     "end": 1360,
+     "quote": "After that, I started a notebook taped to the inside of the change drawer.",
+     "prefix": "aundry dried in forty minutes.\n\n",
+     "suffix": " Each page has a machine number,"
+    }
+   },
+   {
+    "id": "s_9419bf0e12",
+    "why": "Reveals cultural awareness and communication ability, adding depth to your personal voice.",
+    "anchor": {
+     "start": 1712,
+     "end": 1898,
+     "quote": "Many of our customers speak Yoruba, Spanish, or Gujarati, and I learned to explain the card machine with my hands, my phone, and a laminated sheet my sister and I made in four languages.",
+     "prefix": "aught me how to talk to people. ",
+     "suffix": " Some customers now ask for me b"
+    }
+   }
+  ],
+  "dimensions": [
+   {
+    "key": "prompt_alignment",
+    "rating": "strong",
+    "rationale": "Directly answers the challenge prompt with a clear incident and lessons."
+   },
+   {
+    "key": "specificity",
+    "rating": "strong",
+    "rationale": "Includes precise details like dryer number 9, belt width, notebook pages, and multilingual sheet."
+   },
+   {
+    "key": "voice",
+    "rating": "developing",
+    "rationale": "Some personal touches appear, but many sentences are generic and repetitive."
+   },
+   {
+    "key": "reflection",
+    "rating": "developing",
+    "rationale": "Mostly lists lessons (“I learned…”) without deeper insight into how they changed you."
+   },
+   {
+    "key": "structure",
+    "rating": "strong",
+    "rationale": "Chronological flow from problem to solution to broader impact is easy to follow."
+   },
+   {
+    "key": "agency",
+    "rating": "strong",
+    "rationale": "You are the one who watches videos, repairs the dryer, and creates the notebook."
+   },
+   {
+    "key": "growth",
+    "rating": "developing",
+    "rationale": "Growth is asserted (“I realized…”) but not fully shown in new behaviors beyond the laundry."
+   },
+   {
+    "key": "clarity",
+    "rating": "strong",
+    "rationale": "Sentences are clear; the narrative is understandable on first read."
+   },
+   {
+    "key": "opening",
+    "rating": "developing",
+    "rationale": "Starts with a clichéd “Ever since I was a child” rather than a vivid hook."
+   },
+   {
+    "key": "ending",
+    "rating": "needs_work",
+    "rationale": "Ends with a formulaic “In conclusion” summary instead of a resonant image or insight."
+   },
+   {
+    "key": "pacing",
+    "rating": "developing",
+    "rationale": "Lots of space spent on repair details; the reflective sections are compressed."
+   },
+   {
+    "key": "cliche",
+    "rating": "developing",
+    "rationale": "Contains stock phrases like “shaped me into the person I am today” and “hard work pays off.”"
+   },
+   {
+    "key": "concision",
+    "rating": "developing",
+    "rationale": "Repetition of “I learned” and multiple short sentences could be combined."
+   },
+   {
+    "key": "unsupported_claims",
+    "rating": "developing",
+    "rationale": "Claims such as “I can step outside my comfort zone and make a difference” are not fully illustrated."
+   },
+   {
+    "key": "meaning",
+    "rating": "strong",
+    "rationale": "Reader learns you are reliable, technically curious, and community‑oriented."
+   },
+   {
+    "key": "event_vs_reflection",
+    "rating": "developing",
+    "rationale": "Narration dominates; reflection is largely lumped at the end."
+   },
+   {
+    "key": "development",
+    "rating": "developing",
+    "rationale": "Central idea (problem solving) is restated rather than deepened over the essay."
+   },
+   {
+    "key": "earned_ending",
+    "rating": "needs_work",
+    "rationale": "Conclusion does not arise organically from the specific anecdotes presented."
+   }
+  ],
+  "notes": [
+   {
+    "id": "n_5ddf764c48",
+    "dimension": "opening",
+    "severity": "medium",
+    "title": "Clichéd opening",
+    "why": "The first sentence uses a generic childhood trope and does not hook the reader.",
+    "action": "Replace with a vivid moment that drops the reader into the challenge (e.g., the instant the dryer stopped on your first night in charge).",
+    "example": null,
+    "question": "What specific feeling or image did you have the first time the dryer ate a customer's quarters?",
+    "confidence": "high",
+    "anchor": {
+     "start": 0,
+     "end": 73,
+     "quote": "Ever since I was a child, my family's laundromat has been my second home.",
+     "prefix": "",
+     "suffix": " Wash & Go sits between a nail s"
+    }
+   },
+   {
+    "id": "n_3a45810f8b",
+    "dimension": "reflection",
+    "severity": "low",
+    "title": "Repetitive lesson statements",
+    "why": "Multiple sentences list what you learned without showing how your thinking actually changed.",
+    "action": "Combine the lesson sentences and tie them to a concrete later behavior (e.g., how you now approach group projects).",
+    "example": null,
+    "question": "Can you describe a recent situation where you applied that responsibility beyond the laundromat?",
+    "confidence": "high",
+    "anchor": {
+     "start": 2054,
+     "end": 2111,
+     "quote": "I learned the importance of responsibility and hard work.",
+     "prefix": " on Tuesdays was hard at first. ",
+     "suffix": " I learned that problems can be "
+    }
+   },
+   {
+    "id": "n_a566076f28",
+    "dimension": "ending",
+    "severity": "medium",
+    "title": "Formulaic conclusion",
+    "why": "The ending repeats summary language and uses “In conclusion,” which feels like a filler rather than an earned insight.",
+    "action": "Rewrite the final paragraph to end with a specific image or forward‑looking thought that stems from the notebook or repair experience.",
+    "example": null,
+    "question": "What is the most vivid image you have of yourself fixing something in the future?",
+    "confidence": "high",
+    "anchor": {
+     "start": 2271,
+     "end": 2376,
+     "quote": "In conclusion, the laundromat taught me that I can step outside of my comfort zone and make a difference.",
+     "prefix": "d that every customer matters.\n\n",
+     "suffix": " I want to study mechanical engi"
+    }
+   },
+   {
+    "id": "n_dacc9d2ab6",
+    "dimension": "cliche",
+    "severity": "low",
+    "title": "Stock phrasing",
+    "why": "Phrases like “shaped me into the person I am today” and “hard work pays off” are generic and dilute originality.",
+    "action": "Replace with a concrete description of how you act differently now.",
+    "example": null,
+    "question": "How do you now handle unexpected problems at school or in clubs?",
+    "confidence": "high",
+    "anchor": {
+     "start": 1950,
+     "end": 2007,
+     "quote": "This experience has shaped me into the person I am today.",
+     "prefix": "ask for me by name on Tuesdays. ",
+     "suffix": "\n\nWorking alone on Tuesdays was "
+    }
+   },
+   {
+    "id": "n_6ed887239b",
+    "dimension": "concision",
+    "severity": "low",
+    "title": "Overuse of formal connectors",
+    "why": "Words like “Moreover” and “Furthermore” feel stiff and interrupt the natural flow.",
+    "action": "Remove the connector and blend the sentence into the previous or next one.",
+    "example": null,
+    "question": null,
+    "confidence": "high",
+    "anchor": {
+     "start": 618,
+     "end": 750,
+     "quote": "Moreover, I realized that a broken dryer at a laundromat is not just a broken machine, but a problem for everyone who depends on it.",
+     "prefix": "riting.\n\nI felt so overwhelmed. ",
+     "suffix": " Furthermore, a repair visit cos"
+    }
+   },
+   {
+    "id": "n_1491a3b6a0",
+    "dimension": "unsupported_claims",
+    "severity": "medium",
+    "title": "Link to engineering goal needs depth",
+    "why": "The jump from laundromat work to wanting to study mechanical engineering is abrupt and not fully justified.",
+    "action": "Add a sentence that connects a specific skill you learned (e.g., diagnosing a belt issue) to a future engineering interest.",
+    "example": null,
+    "question": "Which part of fixing the dryer sparked your curiosity about how machines work?",
+    "confidence": "high",
+    "anchor": {
+     "start": 2377,
+     "end": 2510,
+     "quote": "I want to study mechanical engineering because I want to keep fixing the things people depend on, and I know that hard work pays off.",
+     "prefix": "ort zone and make a difference. ",
+     "suffix": ""
+    }
+   },
+   {
+    "id": "n_e3203f0c0a",
+    "dimension": "voice",
+    "severity": "low",
+    "title": "Repetitive sentence starts",
+    "why": "Many sentences begin with “I,” making the prose feel monotonous.",
+    "action": "Vary openings by starting with the action, a result, or a descriptive phrase.",
+    "example": null,
+    "question": null,
+    "confidence": "high",
+    "anchor": {
+     "start": 1576,
+     "end": 1657,
+     "quote": "My dad laughs at the notebook, but last month he used it to fix a washer himself.",
+     "prefix": " because the quarters get damp. ",
+     "suffix": "\n\nThe laundromat also taught me "
+    }
+   }
+  ],
+  "plan": [
+   {
+    "step": "Rewrite the opening to drop the reader into the broken‑dryer moment.",
+    "why": "A strong hook replaces the cliché and immediately shows the challenge.",
+    "noteIds": [
+     "n_5ddf764c48"
+    ]
+   },
+   {
+    "step": "Combine and deepen the reflection sentences, linking each lesson to a later example.",
+    "why": "Reduces redundancy and provides evidence of growth.",
+    "noteIds": [
+     "n_3a45810f8b",
+     "n_e3203f0c0a"
+    ]
+   },
+   {
+    "step": "Craft an earned ending that ties a concrete future image to the skills you described.",
+    "why": "Transforms the summary conclusion into a resonant, forward‑looking moment.",
+    "noteIds": [
+     "n_a566076f28",
+     "n_1491a3b6a0"
+    ]
+   },
+   {
+    "step": "Edit for concision: remove formal connectors, vary sentence starts, and replace stock phrases.",
+    "why": "Polishes voice and improves readability.",
+    "noteIds": [
+     "n_dacc9d2ab6",
+     "n_6ed887239b",
+     "n_e3203f0c0a"
+    ]
+   }
+  ],
+  "questions": [
+   "What exact feeling did you have the first time the dryer ate a customer's quarters, and how did that shape your immediate response?",
+   "Can you recall a recent school project where you used the same troubleshooting mindset you developed at the laundromat?",
+   "Which part of taking apart the dryer sparked the most curiosity about mechanical systems?",
+   "How does the notebook you created influence the way you organize your work or studies now?"
+  ],
+  "caveats": [],
+  "dropped": 0,
+  "model": "groq/openai/gpt-oss-120b"
+ },
+ "voice": {
+  "summary": "The voice is strongest in the middle of the essay, when the writer describes the physical repair of the dryer and the creation of the maintenance notebook. The voice weakens significantly in the final two paragraphs, where specific details give way to abstract summaries of values and generic conclusions about community and work ethic.",
+  "keep": [
+   {
+    "id": "k_10f16f5bf7",
+    "why": "Anchors the story in a specific, vivid location.",
+    "anchor": {
+     "start": 74,
+     "end": 134,
+     "quote": "Wash & Go sits between a nail salon and a bakery on Route 27",
+     "prefix": "dromat has been my second home. ",
+     "suffix": ", and on Tuesday nights I run it"
+    }
+   },
+   {
+    "id": "k_c28ef27fea",
+    "why": "Specific, memorable, and uses active language that avoids generic descriptions of failure.",
+    "anchor": {
+     "start": 260,
+     "end": 321,
+     "quote": "dryer number 9 ate a customer's quarters and stopped spinning",
+     "prefix": " first Tuesday I was in charge, ",
+     "suffix": ". Mrs. Adeyemi, who comes every "
+    }
+   },
+   {
+    "id": "k_0d8bbd5792",
+    "why": "Original, sensory comparison that shows your understanding of sound and consequence.",
+    "anchor": {
+     "start": 1168,
+     "end": 1209,
+     "quote": "a sound like a shopping cart full of cans",
+     "prefix": "the drum spun backward and made ",
+     "suffix": ". The second time it worked. Mrs"
+    }
+   },
+   {
+    "id": "k_fcb7ed64ca",
+    "why": "Characterizes the community and the stakes without resorting to abstract labels.",
+    "anchor": {
+     "start": 328,
+     "end": 394,
+     "quote": "Adeyemi, who comes every week with four bags and a baby on her hip",
+     "prefix": "ters and stopped spinning. Mrs. ",
+     "suffix": ", looked at me like I was suppos"
+    }
+   }
+  ],
+  "generic": [
+   {
+    "id": "g_40863a54e6",
+    "signal": "emotion_told",
+    "why": "The reader cannot find a unique emotional signature here; it describes a universal feeling of being stuck without showing your specific experience.",
+    "suggestion": "Replace the label with a physical detail. What happened in your body? Did your hands shake while reaching for the change drawer? Did your vision tunnel?",
+    "question": "Specifically, how did the moment of the broken dryer change your physical reaction or immediate next action compared to how you usually handle stress?",
+    "anchor": {
+     "start": 595,
+     "end": 616,
+     "quote": "I felt so overwhelmed",
+     "prefix": " door in my worst handwriting.\n\n",
+     "suffix": ". Moreover, I realized that a br"
+    }
+   },
+   {
+    "id": "g_2bc4b326a4",
+    "signal": "repeated_growth_claim",
+    "why": "It is a summary statement that interrupts the narrative flow and relies on a cliché that adds no new information to the reader\u001d192549 profile.",
+    "suggestion": "Cut this sentence entirely. The transformation is already shown by the notebook and the customers asking for you by name. Trust the evidence you have already gathered.",
+    "question": "Was there a specific moment, perhaps after the second belt installation or during a rainy day, where the routine felt different or where you stopped seeing it as a job and started seeing it as a craft?",
+    "anchor": {
+     "start": 1950,
+     "end": 2006,
+     "quote": "This experience has shaped me into the person I am today",
+     "prefix": "ask for me by name on Tuesdays. ",
+     "suffix": ".\n\nWorking alone on Tuesdays was"
+    }
+   },
+   {
+    "id": "g_4044e42a4c",
+    "signal": "summary_without_perspective",
+    "why": "It tells the reader what to think about work ethic rather than letting them see that ethic in action. It feels like a homework answer rather than a personal memory.",
+    "suggestion": "Delete this abstract summary. Instead, describe a specific Tuesday when 'responsibility' felt heavy. Did you feel the weight of the building? Did you notice a specific leak or stain?",
+    "question": "Think back to a specific Tuesday where you were alone. What was the atmosphere like? What specific sound or smell was present that anchored you to that moment in time?",
+    "anchor": {
+     "start": 2054,
+     "end": 2110,
+     "quote": "I learned the importance of responsibility and hard work",
+     "prefix": " on Tuesdays was hard at first. ",
+     "suffix": ". I learned that problems can be"
+    }
+   },
+   {
+    "id": "g_2a4e567fd3",
+    "signal": "repeated_growth_claim",
+    "why": "The conclusion rushes the narrative to a close with broad, interchangeable values. It fails to leave the reader with a distinct, memorable final image of the applicant.",
+    "suggestion": "Remove the 'In conclusion' and the generic 'comfort zone' / 'make a difference' phrases. End with a specific image of you, perhaps standing in the laundromat, looking at the machines, ready for the next Tuesday.",
+    "question": "What was the most difficult part of repairing the dryer, and what exactly did you do when the belt broke the first time? Was there a specific feeling of frustration or patience at that moment?",
+    "anchor": {
+     "start": 2286,
+     "end": 2375,
+     "quote": "the laundromat taught me that I can step outside of my comfort zone and make a difference",
+     "prefix": "stomer matters.\n\nIn conclusion, ",
+     "suffix": ". I want to study mechanical eng"
+    }
+   },
+   {
+    "id": "g_dc8976cb6d",
+    "signal": "generic_motivation",
+    "why": "This sentence presents a widely held belief as a personal discovery. It lacks the specificity that would tie this insight to your unique experience at Wash & Go.",
+    "suggestion": "Instead of stating this as a universal truth, show a specific customer interaction that made you realize this. Did a specific customer tell you something after you helped them? What was that exchange about?",
+    "question": "When you made the laminated sheet in four languages, what specific difficulty did you face in trying to explain a simple concept to someone without a shared language? What was their reaction when they finally understood?",
+    "anchor": {
+     "start": 2168,
+     "end": 2268,
+     "quote": "I also learned that small businesses are the backbone of communities and that every customer matters",
+     "prefix": "can be solved if you stay calm. ",
+     "suffix": ".\n\nIn conclusion, the laundromat"
+    }
+   },
+   {
+    "id": "g_062c530dc0",
+    "signal": "repeated_growth_claim",
+    "why": "The statement of future goals is undermined by the inclusion of a well-worn proverb. It sounds like a generic valedictorian speech rather than a true reflection of your interests.",
+    "suggestion": "Drop the 'hard work pays off' clich\u0014. Focus on the engineering part. What specific aspect of the repair process appealed to you? Was it the logic of the belt tension, the cost-effectiveness, or the immediate feedback loop of fixing something for a person?",
+    "question": "What was your state of mind when you first decided to study mechanical engineering, and was it a direct result of the dryer repair or something else? Did you ever discuss this decision with someone at the laundromat?",
+    "anchor": {
+     "start": 2377,
+     "end": 2509,
+     "quote": "I want to study mechanical engineering because I want to keep fixing the things people depend on, and I know that hard work pays off",
+     "prefix": "ort zone and make a difference. ",
+     "suffix": "."
+    }
+   }
+  ],
+  "patterns": [
+   {
+    "id": "p_0ae5b408aa",
+    "pattern": "formulaic_transition",
+    "observation": "Uses 'Moreover' and 'Furthermore' to transition between emotional reaction and financial reality.",
+    "why": "Formal connectors create a distance that feels like a report rather than a personal story.",
+    "suggestion": "Delete the connectors and let the ideas flow naturally.",
+    "anchor": {
+     "start": 618,
+     "end": 703,
+     "quote": "Moreover, I realized that a broken dryer at a laundromat is not just a broken machine",
+     "prefix": "riting.\n\nI felt so overwhelmed. ",
+     "suffix": ", but a problem for everyone who"
+    }
+   },
+   {
+    "id": "p_54d40d007e",
+    "pattern": "repeated_structure",
+    "observation": "Ends the essay with a specific job choice but undermines it by adding a universal truth.",
+    "why": "Weakens the strong finish by introducing a tired, vague moral.",
+    "suggestion": "End on the ambition to fix things, not on the reward for working hard.",
+    "anchor": {
+     "start": 2479,
+     "end": 2509,
+     "quote": "I know that hard work pays off",
+     "prefix": "he things people depend on, and ",
+     "suffix": "."
+    }
+   },
+   {
+    "id": "p_497a431c36",
+    "pattern": "list_of_three",
+    "observation": "The final paragraph lists three distinct lessons learned without explaining how they were learned.",
+    "why": "Rushes the ending and reduces the complex experience to a bullet point of values.",
+    "suggestion": "Cut the list entirely. The specificity of the previous paragraphs has already conveyed these ideas.",
+    "anchor": {
+     "start": 2054,
+     "end": 2110,
+     "quote": "I learned the importance of responsibility and hard work",
+     "prefix": " on Tuesdays was hard at first. ",
+     "suffix": ". I learned that problems can be"
+    }
+   },
+   {
+    "id": "p_31f26d51d8",
+    "pattern": "stock_phrase",
+    "observation": "Starts with a well-worn opening phrase that sets up a generic narrative.",
+    "why": "The opening is a clich\u0014 that limits the reader's imagination and feels derivative.",
+    "suggestion": "Instead of a long backstory, open with a specific Monday night, or a specific moment of running the shop.",
+    "anchor": {
+     "start": 0,
+     "end": 72,
+     "quote": "Ever since I was a child, my family's laundromat has been my second home",
+     "prefix": "",
+     "suffix": ". Wash & Go sits between a nail "
+    }
+   },
+   {
+    "id": "p_62fe016ae7",
+    "pattern": "formulaic_transition",
+    "observation": "Uses 'In conclusion' to signal the final paragraph.",
+    "why": "Reads like a high school essay structure rather than a narrative reflection.",
+    "suggestion": "Delete the connector and the phrase 'comfort zone'. Let the final sentence stand on its own.",
+    "anchor": {
+     "start": 2271,
+     "end": 2353,
+     "quote": "In conclusion, the laundromat taught me that I can step outside of my comfort zone",
+     "prefix": "d that every customer matters.\n\n",
+     "suffix": " and make a difference. I want t"
+    }
+   },
+   {
+    "id": "p_12984f41f2",
+    "pattern": "generic_abstraction",
+    "observation": "Relies on abstract summaries of character traits rather than showing them in action.",
+    "why": "Abstract statements lack the power of specific anecdotes and do not differentiate the writer.",
+    "suggestion": "Show the interconnection through a specific scene where you helped a non-English speaker use the card machine.",
+    "anchor": {
+     "start": 2168,
+     "end": 2236,
+     "quote": "I also learned that small businesses are the backbone of communities",
+     "prefix": "can be solved if you stay calm. ",
+     "suffix": " and that every customer matters"
+    }
+   }
+  ],
+  "shift": {
+   "detected": false,
+   "explanation": "The style remains consistently narrative and personal throughout the essay. However, the tone becomes more abstract and summary-like in the final two paragraphs as the writer shifts from recounting specific events to listing broad themes and concluding with a general statement of intent.",
+   "anchor": null
+  },
+  "dropped": 1,
+  "model": "groq/qwen/qwen3.8-27b"
+ },
+ "errors": {},
+ "analysis": {
+  "words": 466,
+  "chars": 2510,
+  "sentenceCount": 32,
+  "paragraphCount": 8,
+  "avgSentenceWords": 14.6,
+  "sentenceLengthCv": 0.59,
+  "longestSentence": {
+   "n": 24,
+   "words": 34
+  },
+  "iStartShare": 0.21875,
+  "rhythmFlagged": false,
+  "groups": [
+   {
+    "kind": "growth_claim",
+    "label": "Statements of growth",
+    "explanation": "Phrases like \"I learned\" and \"this experience taught me\" announce growth instead of showing it. Several of them can stand in for reflection that is not on the page.",
+    "suggestion": "Keep the one that matters most and show the change through what you now do differently.",
+    "count": 7,
+    "flagged": true,
+    "items": [
+     {
+      "id": "growth_claim:628",
+      "kind": "growth_claim",
+      "start": 628,
+      "end": 638,
+      "text": "I realized"
+     },
+     {
+      "id": "growth_claim:1679",
+      "kind": "growth_claim",
+      "start": 1679,
+      "end": 1688,
+      "text": "taught me"
+     },
+     {
+      "id": "growth_claim:1774",
+      "kind": "growth_claim",
+      "start": 1774,
+      "end": 1783,
+      "text": "I learned"
+     },
+     {
+      "id": "growth_claim:1950",
+      "kind": "growth_claim",
+      "start": 1950,
+      "end": 1965,
+      "text": "This experience"
+     },
+     {
+      "id": "growth_claim:2054",
+      "kind": "growth_claim",
+      "start": 2054,
+      "end": 2063,
+      "text": "I learned"
+     },
+     {
+      "id": "growth_claim:2112",
+      "kind": "growth_claim",
+      "start": 2112,
+      "end": 2121,
+      "text": "I learned"
+     },
+     {
+      "id": "growth_claim:2301",
+      "kind": "growth_claim",
+      "start": 2301,
+      "end": 2310,
+      "text": "taught me"
+     }
+    ]
+   },
+   {
+    "kind": "repeated_opener",
+    "label": "Repeated sentence openings",
+    "explanation": "Three or more sentences in a row start with the same word. The rhythm flattens and the reader notices the pattern instead of the content.",
+    "suggestion": "Vary how a sentence enters: start with a time, a place, an action or a line of dialogue.",
+    "count": 6,
+    "flagged": true,
+    "items": [
+     {
+      "id": "repeated_opener:449",
+      "kind": "repeated_opener",
+      "start": 449,
+      "end": 450,
+      "text": "I"
+     },
+     {
+      "id": "repeated_opener:460",
+      "kind": "repeated_opener",
+      "start": 460,
+      "end": 461,
+      "text": "I"
+     },
+     {
+      "id": "repeated_opener:595",
+      "kind": "repeated_opener",
+      "start": 595,
+      "end": 596,
+      "text": "I"
+     },
+     {
+      "id": "repeated_opener:2054",
+      "kind": "repeated_opener",
+      "start": 2054,
+      "end": 2055,
+      "text": "I"
+     },
+     {
+      "id": "repeated_opener:2112",
+      "kind": "repeated_opener",
+      "start": 2112,
+      "end": 2113,
+      "text": "I"
+     },
+     {
+      "id": "repeated_opener:2168",
+      "kind": "repeated_opener",
+      "start": 2168,
+      "end": 2169,
+      "text": "I"
+     }
+    ]
+   },
+   {
+    "kind": "stock_phrase",
+    "label": "Stock phrases",
+    "explanation": "Phrases that appear in a great many application essays. Readers have seen them so often that they slide past without registering anything about you.",
+    "suggestion": "Replace the phrase with the specific moment, object or words that made you feel this way.",
+    "count": 5,
+    "flagged": true,
+    "items": [
+     {
+      "id": "stock_phrase:0",
+      "kind": "stock_phrase",
+      "start": 0,
+      "end": 24,
+      "text": "Ever since I was a child"
+     },
+     {
+      "id": "stock_phrase:1970",
+      "kind": "stock_phrase",
+      "start": 1970,
+      "end": 2006,
+      "text": "shaped me into the person I am today"
+     },
+     {
+      "id": "stock_phrase:2322",
+      "kind": "stock_phrase",
+      "start": 2322,
+      "end": 2353,
+      "text": "step outside of my comfort zone"
+     },
+     {
+      "id": "stock_phrase:2358",
+      "kind": "stock_phrase",
+      "start": 2358,
+      "end": 2375,
+      "text": "make a difference"
+     },
+     {
+      "id": "stock_phrase:2491",
+      "kind": "stock_phrase",
+      "start": 2491,
+      "end": 2509,
+      "text": "hard work pays off"
+     }
+    ]
+   },
+   {
+    "kind": "transition",
+    "label": "Formal connectors",
+    "explanation": "Sentence-opening connectors like \"Moreover\" and \"Ultimately\" belong to reports. In a personal essay, several of them make the draft sound like it is following a template.",
+    "suggestion": "Let the ideas connect on their own, or use a time or place (\"Two weeks later\", \"Back home\") to move the reader.",
+    "count": 3,
+    "flagged": true,
+    "items": [
+     {
+      "id": "transition:618",
+      "kind": "transition",
+      "start": 618,
+      "end": 626,
+      "text": "Moreover"
+     },
+     {
+      "id": "transition:751",
+      "kind": "transition",
+      "start": 751,
+      "end": 762,
+      "text": "Furthermore"
+     },
+     {
+      "id": "transition:2271",
+      "kind": "transition",
+      "start": 2271,
+      "end": 2284,
+      "text": "In conclusion"
+     }
+    ]
+   },
+   {
+    "kind": "closing_formula",
+    "label": "Summary ending",
+    "explanation": "Ending with \"In conclusion\" or a lesson statement restates the essay instead of finishing it.",
+    "suggestion": "End on an image, action or thought that shows where you are now.",
+    "count": 1,
+    "flagged": true,
+    "items": [
+     {
+      "id": "closing_formula:2271",
+      "kind": "closing_formula",
+      "start": 2271,
+      "end": 2284,
+      "text": "In conclusion"
+     }
+    ]
+   },
+   {
+    "kind": "contrast_frame",
+    "label": "\"Not X, but Y\" framing",
+    "explanation": "The \"it is not about X, it is about Y\" move is a common rhetorical template. Used more than once it becomes predictable.",
+    "suggestion": "State what you think directly, then support it with what happened.",
+    "count": 1,
+    "flagged": false,
+    "items": [
+     {
+      "id": "contrast_frame:678",
+      "kind": "contrast_frame",
+      "start": 678,
+      "end": 708,
+      "text": "not just a broken machine, but"
+     }
+    ]
+   },
+   {
+    "kind": "emotion_label",
+    "label": "Named emotions",
+    "explanation": "Naming a feeling (\"I was so nervous\") tells the reader what to feel. A detail usually carries the emotion better.",
+    "suggestion": "Describe what you did or noticed in that moment (your hands, what you said, what you could not stop thinking about).",
+    "count": 1,
+    "flagged": false,
+    "items": [
+     {
+      "id": "emotion_label:595",
+      "kind": "emotion_label",
+      "start": 595,
+      "end": 616,
+      "text": "I felt so overwhelmed"
+     }
+    ]
+   }
+  ]
+ },
+ "limits": {
+  "words": 466,
+  "chars": 2510,
+  "over": false,
+  "under": false,
+  "message": null
+ },
+ "promptText": "The lessons we take from obstacles we encounter can be fundamental to later success. Recount a time when you faced a challenge, setback, or failure. How did it affect you, and what did you learn from the experience?",
+ "essayType": "personal_statement",
+ "durationMs": 6727,
+ "generatedAt": "2026-10-15T22:41:46.979Z"
+}
