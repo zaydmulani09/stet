@@ -22,6 +22,13 @@
 | Database exposure | Supabase REST with the publishable key cannot reach schema `stet` (PGRST106) |
 | No secrets in client bundle | Scan of `.next/static` for the Groq key, DB password and pooler host |
 
+### Deployment
+- Production: https://stet-essay.vercel.app (Vercel project stet-essay, auto-deploys from main of github.com/zaydmulani09/stet). Env vars DATABASE_URL and GROQ_API_KEY are set for Production only (encrypted); preview deployments have none.
+- `node scripts/smoke.mjs https://stet-essay.vercel.app`: 22/22 checks passed (health, pages, guest creation, ownership refusal, cross-site refusal, autosave and 409, live review in ~6 s with gpt-oss-120b + qwen3.8-27b, item status, assistant, revision check, versions, compare, export, account deletion).
+- Headless Chrome against production: no client exceptions on the workspace or compare pages after fixing a timezone hydration mismatch (server UTC vs browser local time) that only appeared in production.
+- Daily cron hits /api/health to keep the free Supabase project active and prune expired sessions and rate-limit rows.
+- Test data created during verification was deleted; the production database was empty at handoff.
+
 ### Known limits
 - Free Groq tier: 8,000 tokens/minute per model, 1,000 requests/day; a full review uses two models. Busy periods return a clear wait message.
 - AI Gateway (Claude Haiku 5.5) is wired but off: the Vercel team needs a card on file before its free monthly credit works.

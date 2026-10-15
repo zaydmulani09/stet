@@ -2,6 +2,8 @@
 
 **Feedback on your college essay that points at the sentence.**
 
+Live: https://stet-essay.vercel.app
+
 Stet is a college-essay workspace. Paste a draft, pick the prompt, and get an editor's read: what is working, what to fix first, and where your own voice is strongest. Every comment is tied to the exact words it is about, and code verifies each quote against your draft before it is shown. Stet never rewrites your essay.
 
 *Stet* is the proofreader's mark for "let it stand". In the editor, passages worth keeping get the stet mark: a row of dots under the words.
@@ -41,6 +43,7 @@ npm run lint
 npm run typecheck
 npm run build
 LIVE=1 npx vitest run tests/live   # real model calls (uses free-tier quota)
+node scripts/smoke.mjs https://stet-essay.vercel.app   # end-to-end check of a deployment; cleans up after itself
 ```
 
 ## Configuration
